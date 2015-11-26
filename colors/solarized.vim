@@ -135,7 +135,7 @@
 " environment.
 
 " Environment has full color support
-function s:IsTruecolor()
+function! s:IsTruecolor()
     return has('gui_running') || (has('nvim') && $NVIM_TUI_ENABLE_TRUE_COLOR)
 endfunction
 
