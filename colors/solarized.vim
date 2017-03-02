@@ -580,7 +580,7 @@ exe "hi! Type"           .s:fmt_none   .s:fg_yellow .s:bg_none
 "        Structure       struct, union, enum, etc.
 "        Typedef         A typedef
 
-exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
+exe "hi! Special"        .s:fmt_none   .s:fg_orange   .s:bg_none
 "       *Special         any special symbol
 "        SpecialChar     special character in a constant
 "        Tag             you can use CTRL-] on this
@@ -614,9 +614,9 @@ else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
 endif
-exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
-exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
-exe "hi! Visual"         .s:fmt_none   .s:fg_base01 .s:bg_base03 .s:fmt_revbb
+exe "hi! StatusLine"     .s:fmt_none   .s:fg_base2 .s:bg_base01
+exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base01 .s:bg_base02
+exe "hi! Visual"         .s:fmt_none   .s:fg_base1  .s:bg_base03 .s:fmt_revbb
 exe "hi! Directory"      .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ErrorMsg"       .s:fmt_revr   .s:fg_red    .s:bg_none
 exe "hi! IncSearch"      .s:fmt_stnd   .s:fg_orange .s:bg_none
@@ -670,9 +670,9 @@ exe "hi! Pmenu"          .s:fmt_none   .s:fg_base0  .s:bg_base02  .s:fmt_revbb
 exe "hi! PmenuSel"       .s:fmt_none   .s:fg_base01 .s:bg_base2   .s:fmt_revbb
 exe "hi! PmenuSbar"      .s:fmt_none   .s:fg_base2  .s:bg_base0   .s:fmt_revbb
 exe "hi! PmenuThumb"     .s:fmt_none   .s:fg_base0  .s:bg_base03  .s:fmt_revbb
-exe "hi! TabLine"        .s:fmt_undr   .s:fg_base0  .s:bg_base02  .s:sp_base0
-exe "hi! TabLineFill"    .s:fmt_undr   .s:fg_base0  .s:bg_base02  .s:sp_base0
-exe "hi! TabLineSel"     .s:fmt_undr   .s:fg_base01 .s:bg_base2   .s:sp_base0  .s:fmt_revbbu
+exe "hi! TabLine"        .s:fmt_none   .s:fg_base0  .s:bg_base01  .s:sp_base0
+exe "hi! TabLineFill"    .s:fmt_none   .s:fg_base0  .s:bg_base01  .s:sp_base0
+exe "hi! TabLineSel"     .s:fmt_none   .s:fg_base03 .s:bg_yellow  .s:sp_base0
 exe "hi! CursorColumn"   .s:fmt_none   .s:fg_none   .s:bg_base02
 exe "hi! CursorLine"     .s:fmt_uopt   .s:fg_none   .s:bg_base02  .s:sp_base1
 exe "hi! ColorColumn"    .s:fmt_none   .s:fg_none   .s:bg_base02
@@ -830,7 +830,7 @@ exe "hi! cPreCondit". s:fg_orange.s:bg_none   .s:fmt_none
 exe "hi! VarId"    . s:fg_blue   .s:bg_none   .s:fmt_none
 exe "hi! ConId"    . s:fg_yellow .s:bg_none   .s:fmt_none
 exe "hi! hsImport" . s:fg_magenta.s:bg_none   .s:fmt_none
-exe "hi! hsString" . s:fg_base00 .s:bg_none   .s:fmt_none
+exe "hi! hsString" . s:fg_violet .s:bg_none   .s:fmt_none
 
 exe "hi! hsStructure"        . s:fg_cyan   .s:bg_none   .s:fmt_none
 exe "hi! hs_hlFunctionName"  . s:fg_blue   .s:bg_none
